@@ -9,7 +9,23 @@
 /* empty */
 
 /* main */
-/* empty */
+.main-container {
+  width: 80%;
+  height: 800px;
+  margin: auto;
+  background-color: red;
+  padding-top: 10px;
+}
+
+.row {
+  text-align: center;
+}
+.row > div {
+  width: 30%;
+  height: 300px;
+  background-color: grey;
+  display: inline-block;
+}
 
 /* footer */
 /* empty */
