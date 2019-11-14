@@ -9,23 +9,33 @@
 /* empty */
 
 /* main */
-.main-container {
-  width: 80%;
-  height: 800px;
-  margin: auto;
+.container {
   background-color: red;
+  width: 80%;
+  height: 850px;
   padding-top: 10px;
-}
-
-.row {
+  margin: auto;
   text-align: center;
 }
-.row > div {
+
+.item {
+  background-color: grey;
   width: 300px;
   height: 372px;
-  background-color: grey;
+  padding-bottom: 10px;
   display: inline-block;
+  position: relative;
 }
+
+.discount {
+  background-color: green;
+  position: absolute;
+  right: 0;
+}
+
+/* .item .discount:nth-child(2n) {
+  background-color: red;
+} */
 
 /* footer */
 /* empty */
