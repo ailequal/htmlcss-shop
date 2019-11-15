@@ -9,6 +9,8 @@
 h1 {
   background-color: gray;
   width: 80%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin: auto;
   margin-top: 10px;
   border: 1px solid green;
@@ -17,6 +19,7 @@ h1 {
   font-family: sans-serif;
   font-size: 50px;
   color: green;
+
 }
 
 /* main */
@@ -24,6 +27,7 @@ h1 {
   background-color: green;
   width: 80%;
   padding-top: 10px;
+  border-radius: 0 0 10px 10px;
   margin: auto;
   text-align: center;
 }
@@ -31,22 +35,40 @@ h1 {
 .item {
   display: inline-block;
   position: relative;
-  background-color: grey;
-  width: 350px;
-  height: 200px;
-  padding-bottom: 10px;
+  width: 300px;
+  height: 170px;
+  border-radius: 10px;
   cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
 }
 
-.item > img {
-  width: 100%;
-  height: 100%;
+.first-row > .item:nth-child(1) {
+  background-image: url('../img/carrot.jpg');
+}
+.first-row > .item:nth-child(2) {
+  background-image: url('../img/eggplant.jpg');
+}
+.first-row > .item:nth-child(3) {
+  background-image: url('../img/fennel.jpg');
+}
+
+.second-row > .item:nth-child(1) {
+  background-image: url('../img/pumpkin.jpg');
+}
+.second-row > .item:nth-child(2) {
+  background-image: url('../img/tomato.jpg');
+}
+.second-row > .item:nth-child(3) {
+  background-image: url('../img/zucchini.jpg');
 }
 
 .discount {
   position: absolute;
   right: 0;
   background-color: green;
+  border-radius: 5px;
 }
 .item:nth-last-of-type(even) .discount {
   background-color: red;
@@ -57,7 +79,8 @@ h1 {
   bottom: 0;
   width: 100%;
   padding-bottom: 10px;
-  font-size: 20px;
+  font-size: 25px;
+  color: red;
   visibility: hidden;
 }
 .item:hover .heart{
